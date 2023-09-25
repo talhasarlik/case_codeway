@@ -38,7 +38,7 @@ class TrainingConfig:
     resolution = 256
     train_batch_size = 16
     eval_batch_size = 16
-    num_epochs = 100
+    num_epochs = 50
     gradient_accumulation_steps = 1
     learning_rate = 1e-4
     lr_scheduler = "cosine"
