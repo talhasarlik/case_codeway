@@ -1,0 +1,8 @@
+accelerate>=0.16.0
+datasets
+torch
+torchvision
+tqdm
+Pillow
+diffusers
+python-dotenv
