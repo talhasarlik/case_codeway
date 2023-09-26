@@ -115,7 +115,7 @@ def train_module(config_all, train_data_dir, output_dir, model_path=None):
         diffusers.utils.logging.set_verbosity_error()
         
     if model_path is not None:
-        model = UNet2DConditionModel.from_pretrained(
+        model = UNet2DModel.from_pretrained(
         model_path,
         subfolder="unet",
         torch_dtype=torch.float32
