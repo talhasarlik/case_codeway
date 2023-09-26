@@ -395,11 +395,11 @@ if __name__ == "__main__":
     output_finetune_dir = os.getenv("OUTPUT_DIR_FINETUNE")
     
     
-    torch.cuda.empty_cache()
-    train_module(config_all=config_all, train_data_dir=train_data_dir, output_dir=output_dir)
-    torch.cuda.empty_cache()
-    sample_image(config_all=config_all, model_path=output_dir, train_or_finetuned="train")
-    torch.cuda.empty_cache()
+    # torch.cuda.empty_cache()
+    # train_module(config_all=config_all, train_data_dir=train_data_dir, output_dir=output_dir)
+    # torch.cuda.empty_cache()
+    # sample_image(config_all=config_all, model_path=output_dir, train_or_finetuned="train")
+    # torch.cuda.empty_cache()
     train_module(config_all=config_all, train_data_dir=finetune_data_dir, output_dir=output_finetune_dir, model_path="output_dir")
     torch.cuda.empty_cache()
     sample_image(config_all=config_all, model_path=output_finetune_dir, train_or_finetuned="finetuned")
