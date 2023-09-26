@@ -1,6 +1,6 @@
 import torch
 from diffusers import UNet2DModel, DDIMPipeline, DDIMScheduler
-from PIL import Images
+from PIL import Image
 
 def sample_image(model_path, train_or_finetuned):
     config = UNet2DModel.load_config(f"{model_path}/unet")
